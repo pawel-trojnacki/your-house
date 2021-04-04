@@ -3,12 +3,12 @@ $main-font: 'Open Sans', Arial, Helvetica, sans-serif;
 
 // z-index
 $z-hero: -1;
-$z-nav: -1;
-$z-header: 10;
+$z-nav: 1;
+$z-header: 2;
 
 // colors
 $color-primary: #002856;
-$color-secondary: rgb(237, 242, 248);
+$color-secondary: #fcfcfc;
 $color-light: #fff;
 $color-dark: #151515;
 

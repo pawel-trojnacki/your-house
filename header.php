@@ -23,19 +23,27 @@
 
     <div id="page" class="site">
         <header id="masthead" class="site-header">
-            <div class="site-branding">
-                <?php the_custom_logo() ?>
-                <p>Logo goes here</p>
-            </div>
             <div class="nav-wrapper">
+                <div class="site-branding">
+                    <?php the_custom_logo() ?>
+                    <p>Logo goes here</p>
+                </div>
                 <nav id="site-navigation" class="main-navigation">
                     <?php wp_nav_menu([
                         'theme_location' => 'primary-menu',
                         'menu_id'        => 'primary-menu',
                     ]) ?>
                 </nav>
+                <?php get_template_part('template-parts/components/hamburger') ?>
             </div>
-            <?php get_template_part('template-parts/components/hamburger') ?>
+            <div class="nav-wrapper-mobile">
+                <nav id="site-navigation-mobile" class="main-navigation-mobile">
+                    <?php wp_nav_menu([
+                        'theme_location' => 'primary-menu',
+                        'menu_id'        => 'primary-menu-mobile',
+                    ]) ?>
+                </nav>
+            </div>
 
         </header>
         <main>
