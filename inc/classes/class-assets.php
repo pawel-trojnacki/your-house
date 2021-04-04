@@ -16,6 +16,7 @@ class Assets
     protected function setup_hooks()
     {
         add_action('wp_enqueue_scripts', [$this, 'register_styles']);
+        add_action('wp_enqueue_scripts', [$this, 'register_scripts']);
     }
 
     public function register_styles()
@@ -27,7 +28,10 @@ class Assets
         wp_enqueue_style('main');
     }
 
+
     public function register_scripts()
     {
+        wp_register_script('main', YOUR_HOUSE_BUILD_JS_URI . '/main.js', [], time(), true);
+        wp_enqueue_script('main');
     }
 }

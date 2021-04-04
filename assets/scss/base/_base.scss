@@ -9,4 +9,17 @@ html {
 
 body {
     font-family: $main-font;
+    color: $color-primary;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
 }

@@ -3,4 +3,41 @@ $main-font: 'Open Sans', Arial, Helvetica, sans-serif;
 
 // z-index
 $z-hero: -1;
-$z-nav: 1;
+$z-nav: -1;
+$z-header: 10;
+
+// colors
+$color-primary: #002856;
+$color-secondary: rgb(237, 242, 248);
+$color-light: #fff;
+$color-dark: #151515;
+
+// breakpoints
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+// fonts
+$font-xxs: 10px;
+$font-xs: 12px;
+$font-s: 14px;
+$font-m: 18px;
+$font-l: 22px;
+$font-xl: 26px;
+$font-xxl: 34px;
+$font-hero-s: 28px;
+$font-hero-m: 36px;
+$font-hero-l: 44px;
+
+// spacing
+$spading-xs: 8px;
+$spacing-s: 12px;
+$spacing-m: 20px;
+$spacing-l: 30px;
+$spacing-xl: 50px;
+$spacing-xxl: 80px;
+$spacing-xxxl: 120px;
+
+// shadows
+$shadow-primary: 0px 0px 15px -10px #000000a2;
