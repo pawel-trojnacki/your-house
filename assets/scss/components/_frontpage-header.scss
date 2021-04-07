@@ -9,7 +9,7 @@
     .header-image {
         z-index: -1;
         height: 100%;
-        background-position: 100% 100%;
+        background-position: 75% 75%;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -44,12 +44,24 @@
                 max-width: 60vw;
             }
             @include lg {
+                max-width: 50vw;
+            }
+            @include xl {
                 max-width: 40vw;
             }
         }
         .text {
             font-weight: 600;
+            @include sm {
+                font-size: $font-m;
+                margin: $spacing-s 0;
+            }
+            
             @include lg {
+                max-width: 40vw;
+            }
+
+            @include xl {
                 max-width: 30vw;
             }
         }

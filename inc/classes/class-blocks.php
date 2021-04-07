@@ -43,10 +43,10 @@ class Blocks
     public function register_section_blocks()
     {
         acf_register_block_type([
-            'name' => 'about_section',
-            'title' => __('About Section'),
+            'name' => 'grid_section',
+            'title' => __('Grid Section'),
             'description' => __('Full size image'),
-            'render_template' => 'template-parts/blocks/sections/about_section.php',
+            'render_template' => 'template-parts/blocks/sections/grid-section.php',
             'keywords' => ['about'],
         ]);
         acf_register_block_type([

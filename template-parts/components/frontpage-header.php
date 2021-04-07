@@ -1,3 +1,12 @@
+<?php
+
+/**
+ * Frontpage header component
+ * 
+ * @package Your_House
+ */
+?>
+
 <header class="frontpage-header">
     <style>
     .header-image {

@@ -1,0 +1,65 @@
+
+.grid-section {
+    @include flex-column;
+    @include lg {
+        @include flex-between;
+        align-items: flex-start;
+    }
+    .wrapper-content {
+
+        @include lg {
+            width: 50%;
+        }
+
+        .content-inner {
+            @include spacing-content;
+            @include sm {
+                max-width: 80%;
+            }
+            @include lg {
+                max-width: 100%;
+                padding-top: $spacing-l;
+            }
+        }
+
+        .images {
+            display: none;
+            @include lg {
+                display: block;
+                @include spacing-content;
+            }
+            img {
+                margin: $spacing-xl 0;
+            }
+        }
+
+    }
+
+    .wrapper-image {
+        margin-top: $spacing-l;
+        @include lg {
+            width: 50%;
+            margin-top: 0;
+        }
+
+    }
+}
+
+// <section class="grid-section">
+//     <div class="wrapper-content">
+//         <?php
+//         acf_text($title, 'h2', 'heading');
+//         acf_text($content, 'p', 'text');
+//         acf_link($button_url, $button_text, 'btn');
+//         ?>
+//         <div class="images">
+//             <?php
+//             acf_image($secondary_image);
+//             acf_image($tertiary_image);
+//             ?>
+//         </div>
+//     </div>
+//     <div class="wrapper-image">
+//         <?php acf_image($main_image) ?>
+//     </div>
+// </section>
