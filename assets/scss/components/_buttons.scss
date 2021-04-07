@@ -1,0 +1,19 @@
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: $spacing-s $spacing-m;
+    margin: $spacing-s 0;
+
+    @include sm {
+        padding: $spacing-s $spacing-l;
+        margin: $spacing-m 0;
+    }
+}
+
+.btn-outlined {
+
+}
+
+.btn-contained {
+    background-color: $color-light;
+}

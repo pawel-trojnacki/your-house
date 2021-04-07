@@ -32,6 +32,11 @@ class Assets
     public function register_scripts()
     {
         wp_register_script('main', YOUR_HOUSE_BUILD_JS_URI . '/main.js', [], time(), true);
+        wp_register_script('frontpage', YOUR_HOUSE_BUILD_JS_URI . '/frontpage.js', [], time(), true);
+
         wp_enqueue_script('main');
+        if (is_front_page()) {
+            wp_enqueue_script('frontpage');
+        }
     }
 }

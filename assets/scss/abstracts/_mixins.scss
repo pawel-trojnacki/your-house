@@ -30,6 +30,19 @@
     }
  }
 
+//  spacing
+
+@mixin spacing-content {
+    padding: 0 $spacing-content-s;
+    @include sm {
+        padding: 0 $spacing-content-m;
+    }
+    @include xl {
+        padding: 0 $spacing-content-l;
+    }
+    
+}
+
 //  utils
 
 @mixin flex-between {
@@ -42,4 +55,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

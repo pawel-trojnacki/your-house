@@ -19,6 +19,43 @@ li {
 }
 
 p {
-    line-height: 1.4;
     margin: 0;
+}
+
+.white {
+    color: $color-light;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: $spacing-s 0;
+}
+
+.heading-large {
+    font-weight: 700;
+    font-size: $font-hero-s;
+    @include sm {
+        font-size: $font-hero-m;
+        
+    }
+    @include md {
+        font-size: $font-hero-l;
+    }
+    @include md {
+        font-size: $font-hero-xl;
+    }
+}
+
+.text {
+    line-height: 1.5;
+    font-size: $font-s;
+    margin: $spacing-s 0;
+    @include sm {
+        font-size: $font-m;        
+    }
+    @include md {
+        font-size: $font-m;
+    }
 }

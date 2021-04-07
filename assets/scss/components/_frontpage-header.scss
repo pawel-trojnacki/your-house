@@ -1,0 +1,57 @@
+.frontpage-header {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-hero;
+    overflow: hidden;
+    .header-image {
+        z-index: -1;
+        height: 100%;
+        background-position: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $color-primary;
+            opacity: 0.7
+        }
+    }
+    .header-inner {
+        height: 100%;
+        transform: translateY(-100%);
+        @include flex-column;
+        @include spacing-content;
+        padding-top: 10%;
+        @include sm {
+            padding-top: 10%;
+        }
+        @include xl {
+            padding-top: 8%;
+        }
+        * {
+            z-index: $z-content;
+            max-width: 280px;
+            @include sm {
+                max-width: 60vw;
+            }
+            @include lg {
+                max-width: 40vw;
+            }
+        }
+        .text {
+            font-weight: 600;
+            @include lg {
+                max-width: 30vw;
+            }
+        }
+    }
+}

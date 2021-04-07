@@ -10,6 +10,7 @@ const OUTPUT_DIR = path.resolve(__dirname, 'build');
 
 const entry = {
     main: JS_DIR + '/main.js',
+    frontpage: JS_DIR + '/frontpage.js',
 };
 
 const output = {
