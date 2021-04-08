@@ -1,7 +1,14 @@
+.content {
+    background-color: $color-light;
+}
+
 .content-margin {
     margin-top: 100vh;
 }
 
-.content {
-    background-color: $color-light;
+.content-margin-responsive {
+    margin-top: 50vh;
+    @include lg {
+        margin-top: 100vh;
+    }
 }

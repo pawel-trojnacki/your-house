@@ -1,0 +1,11 @@
+.project-image-wrapper {
+    @include fixed-image-wrapper;
+    height: 50vh;
+    @include lg {
+        height: 100vh;
+    }    
+    .project-image {
+        height: 100%;
+        width: 100%;
+    }
+}

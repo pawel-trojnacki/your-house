@@ -2,7 +2,7 @@ import { parallax } from './utils/parallax';
 const background = document.querySelector('.header-image');
 // const headerInner = document.querySelector('.header-inner');
 
-const startHeaderInnerPosition = -100;
+// const startHeaderInnerPosition = -100;
 
 function backgroundTransform() {
     const { scale, translateY } = parallax();
