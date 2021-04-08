@@ -59,8 +59,15 @@ p {
     }
 }
 
+.heading-small {
+    font-size: $font-s;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: $spacing-xs 0;
+}
+
 .text {
-    line-height: 1.5;
+    line-height: 1.8;
     font-size: $font-s;
     margin: $spacing-s 0;
     text-align: justify;
