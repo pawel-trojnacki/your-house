@@ -59,6 +59,18 @@ p {
     }
 }
 
+.subheading {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: $spacing-s 0;
+    font-size: $font-m;
+    @include sm {
+        font-size: $font-l;
+        margin: $spacing-l 0;
+    }
+}
+
 .heading-small {
     font-size: $font-s;
     font-weight: 400;

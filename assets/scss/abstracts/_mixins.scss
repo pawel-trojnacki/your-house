@@ -45,18 +45,21 @@
 
 //  utils
 
-@mixin flex-between {
+@mixin flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex-between {
+    @include flex-row;
+    justify-content: space-between;
 }
 
 @mixin flex-center {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: center;
-    align-items: center;
 }
 
 @mixin flex-column {
@@ -80,5 +83,22 @@
     @include lg {
         @include flex-between;
         align-items: flex-start;
+    }
+}
+
+@mixin translate-even-children {
+    padding-bottom: 15%;
+    *:nth-child(even) {
+        transform: translateY(15%);
+    }
+}
+
+@mixin block-standard-spacing {
+    margin: $spacing-xl 0;
+    @include md {
+        margin: $spacing-xxl 0;
+    }
+    @include lg {
+        margin: $spacing-xxxl 0;
     }
 }

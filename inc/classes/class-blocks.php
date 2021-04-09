@@ -32,10 +32,10 @@ class Blocks
             'keywords' => ['gallery'],
         ]);
         acf_register_block_type([
-            'name' => 'full_image',
-            'title' => __('Full Image'),
-            'description' => __('Full size image'),
-            'render_template' => 'template-parts/blocks/gallery/full-image.php',
+            'name' => 'full_width_image',
+            'title' => __('Full Width Image'),
+            'description' => __('Full viewport width image'),
+            'render_template' => 'template-parts/blocks/gallery/full-width-image.php',
             'keywords' => ['image'],
         ]);
     }
@@ -50,11 +50,11 @@ class Blocks
             'keywords' => ['about'],
         ]);
         acf_register_block_type([
-            'name' => 'columns_image_text',
-            'title' => __('Image & Text Columns'),
-            'description' => __('Columns with image and content'),
-            'render_template' => 'template-parts/blocks/sections/columns-image-text.php',
-            'keywords' => ['image', 'text'],
+            'name' => 'columns-section',
+            'title' => __('Columns Section'),
+            'description' => __('Section with two columns'),
+            'render_template' => 'template-parts/blocks/sections/columns-section.php',
+            'keywords' => ['image', 'text', 'columns'],
         ]);
     }
 }

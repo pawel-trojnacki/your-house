@@ -24,7 +24,7 @@ $font-xxs: 10px;
 $font-xs: 12px;
 $font-s: 14px;
 $font-m: 16px;
-$font-l: 26px;
+$font-l: 22px;
 $font-xl: 34px;
 $font-xxl: 48px;
 $font-hero-s: 30px;
@@ -39,10 +39,13 @@ $spacing-m: 20px;
 $spacing-l: 30px;
 $spacing-xl: 50px;
 $spacing-xxl: 80px;
-$spacing-xxxl: 120px;
+$spacing-xxxl: 140px;
 $spacing-content-s: 5vw;
 $spacing-content-m: 8vw;
 $spacing-content-l: 10vw;
 
 // shadows
 $shadow-primary: 0px 0px 15px -10px #000000a2;
+
+// columns
+$column-width: 47%;

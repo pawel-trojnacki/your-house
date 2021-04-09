@@ -33,28 +33,9 @@
     .wrapper-image {
         margin-top: $spacing-l;
         @include lg {
-            width: 50%;
+            width: $column-width;
             margin-top: 0;
         }
 
     }
 }
-
-// <section class="grid-section">
-//     <div class="wrapper-content">
-//         <?php
-//         acf_text($title, 'h2', 'heading');
-//         acf_text($content, 'p', 'text');
-//         acf_link($button_url, $button_text, 'btn');
-//         ?>
-//         <div class="images">
-//             <?php
-//             acf_image($secondary_image);
-//             acf_image($tertiary_image);
-//             ?>
-//         </div>
-//     </div>
-//     <div class="wrapper-image">
-//         <?php acf_image($main_image) ?>
-//     </div>
-// </section>
