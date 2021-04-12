@@ -39,7 +39,7 @@ class Assets
         if (is_front_page()) {
             wp_enqueue_script('frontpage');
         }
-        if (is_singular('project')) {
+        if (is_singular('portfolio')) {
             wp_enqueue_script('project');
         }
     }

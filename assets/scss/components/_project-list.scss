@@ -1,0 +1,32 @@
+.project-list {
+    @include flex-between;
+    .project-item {
+        margin: $spacing-m;
+        @include md {
+           margin: $spacing-m $spacing-xl;
+           width: 36%;
+        }
+        @include xl {
+            width: 40%;
+        }
+
+        .image-wrapper {
+            height: 220px;
+            @include md {
+                height: 180px;
+            }
+            @include lg {
+                height: 250px;
+            }
+            @include xl {
+                height: 320px;
+            }
+            a {
+                .project-item-image {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

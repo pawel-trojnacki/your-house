@@ -1,0 +1,4 @@
+.actions {
+    @include flex-between;
+    padding: $spacing-s 0;
+}

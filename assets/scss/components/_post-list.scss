@@ -1,0 +1,43 @@
+.post-list {
+    @include flex-between;
+    @include md {
+        margin: 0 $spacing-xl;
+    }
+    .post-item {
+        margin: $spacing-m;
+        width: 100%;
+        @include sm {
+            width: 40%;
+        }
+        @include md {
+            margin: $spacing-l 0;
+            width: 45%;
+        }
+        @include lg {
+            width: 30%;
+        }
+
+        .image-wrapper {
+            height: 50vw;
+            @include sm {
+                height: 160px;
+            }
+            @include lg {
+                height: 200px;
+            }
+            @include xl {
+                height: 230px;
+            }
+            a {
+                .post-item-image {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .post-info {
+            margin: $spacing-m 0;
+        }
+    }
+}

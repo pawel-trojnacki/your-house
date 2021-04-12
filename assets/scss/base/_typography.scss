@@ -78,6 +78,16 @@ p {
     margin: $spacing-xs 0;
 }
 
+.heading-secondary {
+    font-size: $font-s;
+    text-transform: uppercase;
+    margin: $spacing-xs 0;
+    font-weight: 700;
+    @include lg {
+        font-size: $font-m;
+    }
+}
+
 .text {
     line-height: 1.8;
     font-size: $font-s;
@@ -86,4 +96,17 @@ p {
     @include sm {
         margin: $spacing-m 0;
     }
+}
+
+.link {
+    font-size: $font-xs;
+    text-decoration: underline;
+    @include lg {
+        font-size: $font-s;
+    }
+}
+
+.date {
+    font-size: $font-xs;
+    font-weight: 600;
 }
