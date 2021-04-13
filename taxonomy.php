@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Taxonomt archive template
+ * Taxonomy archive template
  *
  * @package Your_House
  */

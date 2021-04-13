@@ -102,3 +102,23 @@
         margin: $spacing-xxxl 0;
     }
 }
+
+@mixin block-standard-spacing-centered {
+    margin: $spacing-xl auto;
+    @include md {
+        margin: $spacing-xxl auto;
+    }
+    @include lg {
+        margin: $spacing-xxxl auto;
+    }
+}
+
+@mixin spacing-top {
+    padding-top: $spacing-xl;
+    @include md {
+        padding-top: $spacing-xxl;
+    }
+    @include lg {
+        padding-top: $spacing-xxxl;
+    }
+}

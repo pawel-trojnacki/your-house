@@ -1,5 +1,6 @@
 .grid-section {
    @include grid-section;
+   @include spacing-top;
     .wrapper-content {
 
         @include lg {

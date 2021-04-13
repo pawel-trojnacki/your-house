@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Project list header
+ * Archive header
  * 
  * @package Your_House
  */

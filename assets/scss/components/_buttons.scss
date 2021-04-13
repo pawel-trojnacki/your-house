@@ -1,6 +1,7 @@
 .btn {
     display: inline-block;
     text-transform: uppercase;
+    font-weight: 600;
     padding: $spacing-s $spacing-m;
     margin: $spacing-s 0;
 
@@ -11,9 +12,19 @@
 }
 
 .btn-outlined {
-
+    border: 2px solid $color-primary;
 }
 
 .btn-contained {
     background-color: $color-light;
+}
+
+.btn-primary {
+    background-color: $color-primary;
+    color: $color-light;
+}
+
+.btn-wrapper-end {
+    display: flex;
+    justify-content: flex-end;
 }

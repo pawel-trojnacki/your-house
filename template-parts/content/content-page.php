@@ -8,7 +8,9 @@
 
 ?>
 
-<article>
-    <?php the_title('<h1>', '</h1>') ?>
-    <?php the_content() ?>
-</article>
+<div class="content-narrow">
+    <?php
+    get_template_part('template-parts/components/page-header');
+    the_content()
+    ?>
+</div>

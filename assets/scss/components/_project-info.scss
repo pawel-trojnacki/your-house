@@ -1,9 +1,6 @@
 .project-header {
    @include grid-section;
-   padding-top: $spacing-xl;
-   @include md {
-       padding-top: $spacing-xxl;
-   }
+   @include spacing-top;
    .project-info {
    @include spacing-content;
         @include sm {

@@ -1,0 +1,75 @@
+.wpcf7 {
+    .wpcf7-form {
+        p {
+            margin: $spacing-m 0;
+            label {
+                pointer-events: none;
+                width: 100%;
+                font-weight: 600;
+                transition: all 0.15s linear;
+                font-size: $font-s;
+            }
+            span {
+                input, textarea {
+                    position: relative;
+                    margin-top: $spacing-s;
+                    padding: 16px $spacing-s $spacing-s;
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid $grey-400;
+                    background-color: $grey-200;
+                    color: $color-primary;
+                    font-size: $font-s;
+                    transition: all 0.15s linear;
+                    &:hover {
+                    background-color: $grey-300;
+                    border-bottom: 2px solid $grey-500;
+
+                    }
+                    &:focus {
+                        outline: none;
+                        border-bottom: 2px solid $color-primary;
+                        background-color: $grey-300;
+                    }
+                }
+                textarea {
+                    height: 140px;
+                }
+            }
+            .wpcf7-not-valid-tip {
+                padding-top: $spacing-xs;
+                font-weight: 600;
+                font-size: $font-s;
+            }
+        }
+        .wpcf7-response-output {
+            border: none;
+            margin: $spacing-m 0;
+            padding: 0;
+            font-size: $font-s;
+            font-weight: 600;
+        }
+        .submit-wrapper {
+            @include flex-column;
+            align-items: flex-end;
+        }
+        .wpcf7-submit {
+            // width: 100%;
+            padding: $spacing-s $spacing-m;
+            border: 2px solid $color-primary;
+            background-color: $color-primary;
+            color: $color-light;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: $font-s;
+            letter-spacing: 1px;
+            @include sm {
+                padding: $spacing-s $spacing-l;
+            }
+        }
+        .ajax-loader {
+            display: none;
+        }
+    }
+}

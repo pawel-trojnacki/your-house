@@ -1,8 +1,10 @@
 .archive-header {
    margin-top: $spacing-xxl;
-   padding: $spacing-m $spacing-m $spacing-s;
-   @include md {
-      padding: $spacing-m $spacing-xl $spacing-s;
+   @include lg {
+   margin-top: 0
    }
-   
+   padding: $spacing-m 0 $spacing-s;
+   @include lg {
+      padding: 0;
+   }
 }

@@ -19,6 +19,7 @@ class Blocks
         if (function_exists('acf_register_block_type')) {
             add_action('acf/init', [$this, 'register_images_blocks']);
             add_action('acf/init', [$this, 'register_section_blocks']);
+            add_action('acf/init', [$this, 'register_template_blocks']);
         }
     }
 
@@ -55,6 +56,31 @@ class Blocks
             'description' => __('Section with two columns'),
             'render_template' => 'template-parts/blocks/sections/columns-section.php',
             'keywords' => ['image', 'text', 'columns'],
+        ]);
+        acf_register_block_type([
+            'name' => 'recent-projects',
+            'title' => __('Recent Projects'),
+            'description' => __('Section with recent projects'),
+            'render_template' => 'template-parts/blocks/sections/recent-projects-section.php',
+            'keywords' => [],
+        ]);
+        acf_register_block_type([
+            'name' => 'recent-posts',
+            'title' => __('Recent Posts'),
+            'description' => __('Section with recent posts'),
+            'render_template' => 'template-parts/blocks/sections/recent-posts-section.php',
+            'keywords' => [],
+        ]);
+    }
+
+    public function register_template_blocks()
+    {
+        acf_register_block_type([
+            'name' => 'contact-template',
+            'title' => __('Contact Template'),
+            'description' => __('Section with contact info and contact form'),
+            'render_template' => 'template-parts/blocks/templates/contact-template.php',
+            'keywords' => [],
         ]);
     }
 }

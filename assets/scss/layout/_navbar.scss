@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $color-light;
+    background-color: $grey-100;
     box-shadow: $shadow-primary;
     @include lg {
         padding: $spacing-m $spacing-xl;
@@ -64,7 +64,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: $color-secondary;
+    background-color: ght-grey;
     z-index: $z-nav;
     transform-origin: left;
     transform: scaleX(0);

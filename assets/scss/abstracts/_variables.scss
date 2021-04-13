@@ -9,9 +9,13 @@ $z-header: 3;
 
 // colors
 $color-primary: #002856;
-$color-secondary: #fcfcfc;
 $color-light: #fff;
 $color-dark: #151515;
+$grey-100: #fcfcfc;
+$grey-200: #eee;
+$grey-300: #ddd;
+$grey-400: #aaa;
+$grey-500: #999;
 
 // breakpoints
 $screen-sm-min: 576px;
@@ -33,6 +37,7 @@ $font-hero-l: 42px;
 $font-hero-xl: 56px;
 
 // spacing
+$spacing-xxs: 4px;
 $spacing-xs: 8px;
 $spacing-s: 12px;
 $spacing-m: 20px;

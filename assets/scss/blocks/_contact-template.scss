@@ -1,0 +1,15 @@
+.contact-template {
+    @include flex-between;
+    align-items: flex-start;
+    section {
+        margin: $spacing-m 0;
+        @include md {
+            width: 70%;
+        }
+        @include lg {
+            width: 45%;
+            margin: 0;
+
+        }
+    }
+}

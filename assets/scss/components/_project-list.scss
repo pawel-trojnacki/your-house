@@ -1,13 +1,10 @@
 .project-list {
     @include flex-between;
     .project-item {
-        margin: $spacing-m;
+        margin: $spacing-m 0;
         @include md {
-           margin: $spacing-m $spacing-xl;
-           width: 36%;
-        }
-        @include xl {
-            width: 40%;
+           margin: $spacing-m 0;
+           width: 45%;
         }
 
         .image-wrapper {

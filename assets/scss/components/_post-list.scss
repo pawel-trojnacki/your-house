@@ -1,10 +1,7 @@
 .post-list {
     @include flex-between;
-    @include md {
-        margin: 0 $spacing-xl;
-    }
     .post-item {
-        margin: $spacing-m;
+        margin: $spacing-m 0;
         width: 100%;
         @include sm {
             width: 40%;

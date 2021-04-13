@@ -88,6 +88,13 @@ p {
     }
 }
 
+.heading-spacing {
+    padding: $spacing-m $spacing-m $spacing-s;
+    @include md {
+       padding: $spacing-m $spacing-xl $spacing-s;
+    }  
+ }
+
 .text {
     line-height: 1.8;
     font-size: $font-s;

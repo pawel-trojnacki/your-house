@@ -4,6 +4,10 @@ if (!defined('YOUR_HOUSE_DIR_PATH')) {
     define('YOUR_HOUSE_DIR_PATH', untrailingslashit(get_template_directory()));
 }
 
+
+if (!defined('YOUR_HOUSE_DIR_URI')) {
+    define('YOUR_HOUSE_DIR_URI', untrailingslashit(get_template_directory_uri()));
+}
 if (!defined('YOUR_HOUSE_BUILD_URI')) {
     define('YOUR_HOUSE_BUILD_URI', untrailingslashit(get_template_directory_uri() . '/build'));
 }

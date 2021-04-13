@@ -1,0 +1,18 @@
+.contact-info {
+    .info-list {
+        // @include md {
+        //     padding-top: $spacing-s;
+        // }
+        .info-item {
+            margin: $spacing-m 0;
+            @include flex-row;
+            .icon {
+                width: 1.4em;
+            }
+            .field {
+                margin-left: $spacing-m;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -14,6 +14,12 @@
 }
 
 .content-narrow {
-    max-width: 1280px;
-    margin: 0 auto;
+    @include block-standard-spacing-centered;
+    @include lg {
+        max-width: 1280px;
+    }
+    padding: 0 $spacing-m;
+    @include md {
+       padding: 0 $spacing-xl;
+    }
 }
