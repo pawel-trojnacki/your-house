@@ -8,11 +8,13 @@
 
 require_once YOUR_HOUSE_DIR_PATH . '/inc/utils/acf-utils.php';
 
+use function Your_House\Inc\Utils\acf_image;
 use function Your_House\Inc\Utils\acf_text;
 
 $phone = get_field('phone');
 $email = get_field('email');
 $address = get_field('address');
+$image = get_field('image');
 
 $info_fields = [
     [
@@ -43,4 +45,5 @@ $info_fields = [
         </li>
         <?php endforeach; ?>
     </ul>
+    <?php acf_image($image, 'contact-image') ?>
 </section>

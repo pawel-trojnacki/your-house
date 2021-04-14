@@ -2,6 +2,8 @@
     .wpcf7-form {
         p {
             margin: $spacing-m 0;
+            padding-bottom: $spacing-s;
+            position: relative;
             label {
                 pointer-events: none;
                 width: 100%;
@@ -10,8 +12,8 @@
                 font-size: $font-s;
             }
             span {
+                // position: relative;
                 input, textarea {
-                    position: relative;
                     margin-top: $spacing-s;
                     padding: 16px $spacing-s $spacing-s;
                     width: 100%;
@@ -35,12 +37,15 @@
                 textarea {
                     height: 140px;
                 }
+                .wpcf7-not-valid-tip {
+                    position: absolute;
+                    // top: 200%;
+                    padding-top: $spacing-xxs;
+                    font-weight: 600;
+                    font-size: 0.8em;
+                }
             }
-            .wpcf7-not-valid-tip {
-                padding-top: $spacing-xs;
-                font-weight: 600;
-                font-size: $font-s;
-            }
+           
         }
         .wpcf7-response-output {
             border: none;
@@ -52,10 +57,11 @@
         .submit-wrapper {
             @include flex-column;
             align-items: flex-end;
+            position: relative;
         }
         .wpcf7-submit {
-            // width: 100%;
-            padding: $spacing-s $spacing-m;
+            width: 120px;
+            padding: $spacing-s 0;
             border: 2px solid $color-primary;
             background-color: $color-primary;
             color: $color-light;
@@ -64,12 +70,44 @@
             cursor: pointer;
             font-size: $font-s;
             letter-spacing: 1px;
-            @include sm {
-                padding: $spacing-s $spacing-l;
-            }
+            text-align: center;
         }
         .ajax-loader {
-            display: none;
+            width: 120px;
+            height: 44px;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: $color-primary;
+            opacity: 1;
+            border-radius: 0;
+            &::before {
+                display: none;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: calc(50% - 15px);
+                left: calc(50% - 15px);
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                border: 2px solid $grey-400;
+                border-top: 2px solid $color-light;
+                animation: spin 0.8s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+
         }
     }
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+  }
 }
