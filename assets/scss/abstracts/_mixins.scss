@@ -104,12 +104,13 @@
 }
 
 @mixin block-standard-spacing-centered {
-    margin: $spacing-xl auto;
+    margin: 0 auto;
+    padding: $spacing-xl $spacing-m 0;
     @include md {
-        margin: $spacing-xxl auto;
+        padding: $spacing-xxl $spacing-xl 0;
     }
     @include lg {
-        margin: $spacing-xxxl auto;
+        padding: $spacing-xxxl $spacing-xl 0;
     }
 }
 

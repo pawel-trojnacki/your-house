@@ -18,8 +18,4 @@
     @include lg {
         max-width: 1280px;
     }
-    padding: 0 $spacing-m;
-    @include md {
-       padding: 0 $spacing-xl;
-    }
 }

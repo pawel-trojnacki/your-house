@@ -18,8 +18,13 @@ li {
     list-style: none;
 }
 
-p {
-    margin: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+label, span {
+    text-align: left;
 }
 
 .white {
@@ -27,11 +32,9 @@ p {
 }
 
 .heading {
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1.3;
     margin: $spacing-s 0;
     font-size: $font-l;
+    line-height: 1.3;
     @include sm {
         font-size: $font-xl;
         margin: $spacing-m 0;
@@ -95,14 +98,16 @@ p {
     }  
  }
 
-.text {
+p, .text {
     line-height: 1.8;
     font-size: $font-s;
     margin: $spacing-s 0;
-    text-align: justify;
     @include sm {
         margin: $spacing-m 0;
     }
+}
+.text {
+    text-align: justify;
 }
 
 .link {
@@ -114,6 +119,17 @@ p {
 }
 
 .date {
+    margin: 0;
     font-size: $font-xs;
     font-weight: 600;
+}
+
+.footer-text {
+    margin: $spacing-xs 0;
+    font-size: $font-xs;
+    font-weight: 600;
+    text-align: center;
+    @include lg {
+        font-size: 0.8em;    
+    }
 }

@@ -1,5 +1,10 @@
 .post-list {
     @include flex-between;
+    @include md {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: $spacing-l;
+    }
     .post-item {
         margin: $spacing-m 0;
         width: 100%;
@@ -8,12 +13,8 @@
         }
         @include md {
             margin: $spacing-l 0;
-            width: 45%;
+            width: 100%;
         }
-        @include lg {
-            width: 30%;
-        }
-
         .image-wrapper {
             height: 50vw;
             @include sm {

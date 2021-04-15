@@ -1,0 +1,13 @@
+.wp-block-image {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.wp-block-image, .wp-block-gallery {
+    margin: $spacing-xl 0;
+    @include lg {
+        margin: $spacing-xxl 0;
+    }
+}

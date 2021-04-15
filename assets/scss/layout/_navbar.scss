@@ -4,17 +4,30 @@
     left: 0;
     right: 0;
     z-index: $z-header;
-    padding: $spacing-m;
+    padding: $spacing-s $spacing-m;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $color-light;
     box-shadow: $shadow-primary;
     @include lg {
-        padding: $spacing-m $spacing-xl;
+        padding: $spacing-s $spacing-xl;
     }
     @include xl {
-        padding: $spacing-m $spacing-xxl;
+        padding: $spacing-s $spacing-xxl;
+    }
+    .site-branding {
+        a {
+            img {
+                width: 60px;
+                @include md {
+                    width: 75px;
+                }
+                @include lg {
+                    width: 70px;
+                }
+            }
+        }
     }
     .main-navigation {
         display: none;

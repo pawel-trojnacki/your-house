@@ -1,0 +1,17 @@
+.single-post {
+    .single-post-image {
+        max-height: 50vh;
+        @include lg {
+            max-height: 70vh;
+        }
+    }
+    .single-post-content {
+        padding: $spacing-xl 0;
+        @include lg {
+            padding: $spacing-xxl 0 0;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+}

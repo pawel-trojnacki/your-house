@@ -1,0 +1,9 @@
+.single-post-header {
+    padding-bottom: $spacing-xl;
+    .post-info {
+        span {
+            font-weight: 600;
+            font-size: $font-s;
+        }
+    }
+}

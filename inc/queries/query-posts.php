@@ -11,7 +11,7 @@ function query_posts(int $posts_per_page = 3)
         'post_status' => 'publish',
         'posts_per_page' => $posts_per_page,
         'orderby' => 'date',
-        'order' => 'ASC',
+        'order' => 'DESC',
     ];
     $posts_loop = new WP_Query($posts_args);
     return $posts_loop;

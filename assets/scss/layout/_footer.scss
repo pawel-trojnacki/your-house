@@ -1,0 +1,48 @@
+.site-footer {
+    padding-top: $spacing-l;
+    background-color: $color-light;
+    @include sm {
+        padding-top: $spacing-xxl;
+    }
+    @include lg {
+        padding-top: $spacing-xxxl;
+    }
+    .footer-inner {
+        @include flex-between;
+        padding: $spacing-l $spacing-m;
+        border-top: 1px solid $grey-400;
+        @include lg {
+            padding: $spacing-xl $spacing-xl 0;
+        }
+        @include xl {
+            padding: $spacing-xl $spacing-xxl 0;
+        }
+        .logo-wrapper {
+            @include lg {
+                height: 84px;
+            }
+            img {
+                max-width: 90px;
+                padding: $spacing-s 0;
+                @include sm {
+                    max-width: 100px;
+                }
+            }
+        }
+        .footer-area {
+            .zoom-social-icons-list {
+                text-align: right;
+            }
+        }
+        .site-info {
+            width: 100%;
+            margin-top: $spacing-m;
+            text-align: center;
+            pointer-events: none;
+            @include lg {
+                margin-top: 0;
+                transform: translateY(calc(-42px - 50%));
+            }
+        }
+    }
+}

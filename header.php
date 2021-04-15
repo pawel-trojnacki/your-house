@@ -25,8 +25,9 @@
         <header id="masthead" class="site-header">
             <div class="nav-wrapper">
                 <div class="site-branding">
-                    <?php the_custom_logo() ?>
-                    <p>Logo goes here</p>
+                    <a href="<?php echo home_url() ?>">
+                        <img src="<?php echo YOUR_HOUSE_LOGO_URI ?>" alt="your house">
+                    </a>
                 </div>
                 <nav id="site-navigation" class="main-navigation">
                     <?php wp_nav_menu([
