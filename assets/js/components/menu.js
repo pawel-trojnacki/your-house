@@ -29,6 +29,18 @@ function handleMenuButtonClick() {
     }
 }
 
+function closeMenu() {
+    if (navWrapper.classList.contains('active')) {
+        [hamburger, navWrapper].forEach((item) => {
+            item.classList.remove('active');
+        });
+        addTransitionDelay();
+    }
+}
+
 if (!!hamburger) {
     hamburger.addEventListener('click', handleMenuButtonClick);
+    menuArray.forEach((item) => {
+        item.addEventListener('click', closeMenu);
+    });
 }

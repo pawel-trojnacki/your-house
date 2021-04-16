@@ -8,6 +8,7 @@
         }
 
         .image-wrapper {
+            overflow: hidden;
             height: 220px;
             @include md {
                 height: 180px;

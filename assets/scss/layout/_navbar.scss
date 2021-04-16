@@ -81,7 +81,7 @@
     z-index: $z-nav;
     transform-origin: left;
     transform: scaleX(0);
-    transition: 0.5s ease-in-out 0.3s;
+    transition: 0.5s ease-in-out 0.8s;
     @include flex-center;
     @include lg {
         display: none;
@@ -91,7 +91,7 @@
                 margin: $spacing-s 0;
                 opacity: 0;
                 transform: translateY(12px);
-                transition: 0.3s ease-in-out;
+                transition: 0.5s ease-in-out 0.2s;
                 display: flex;
                 justify-content: center;
                 a {

@@ -8,5 +8,7 @@
 ?>
 
 <div class="project-image-wrapper">
-    <?php echo the_post_thumbnail('full', ['class' => 'project-image']) ?>
+    <div class="inner zoom-out">
+        <?php echo the_post_thumbnail('full', ['class' => 'project-image']) ?>
+    </div>
 </div>

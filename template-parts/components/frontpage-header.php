@@ -20,8 +20,10 @@
         }
     }
     </style>
-    <div class="header-image"></div>
-    <div class="header-inner">
+    <div class="image-wrapper zoom-out">
+        <div class="header-image"></div>
+    </div>
+    <div class="header-inner fade-in-delay">
         <h1 class="heading heading-large white"><?php the_field('header_text') ?></h1>
         <p class="text heading-text white"><?php the_field('header_info') ?></p>
         <div>

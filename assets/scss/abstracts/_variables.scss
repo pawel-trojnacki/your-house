@@ -4,8 +4,9 @@ $main-font: 'Open Sans', Arial, Helvetica, sans-serif;
 // z-index
 $z-hero: -1;
 $z-content: 1;
+$z-cover: 3;
 $z-nav: 2;
-$z-header: 3;
+$z-header: 4;
 
 // colors
 $color-primary: #002856;
@@ -54,3 +55,6 @@ $shadow-primary: 0px 0px 15px -10px #000000a2;
 
 // columns
 $column-width: 47%;
+
+// transitions
+$transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);

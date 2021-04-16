@@ -1,0 +1,7 @@
+.hover-zoom-out {
+    transition: transform 0.3s $transition;
+    transform: scale(1.06);
+    &:hover {
+        transform: scale(1);
+    }
+}

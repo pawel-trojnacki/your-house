@@ -17,6 +17,7 @@
         }
         .image-wrapper {
             height: 50vw;
+            overflow: hidden;
             @include sm {
                 height: 160px;
             }

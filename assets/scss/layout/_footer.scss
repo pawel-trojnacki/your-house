@@ -1,4 +1,6 @@
 .site-footer {
+    position: relative;
+    z-index: $z-content;
     padding-top: $spacing-l;
     background-color: $color-light;
     @include sm {

@@ -3,9 +3,11 @@
     height: 50vh;
     @include lg {
         height: 100vh;
-    }    
-    .project-image {
+    }
+    .inner {
         height: 100%;
-        width: 100%;
+        .project-image {
+            height: 100%;
+        }
     }
 }

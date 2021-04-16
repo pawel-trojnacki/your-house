@@ -33,5 +33,10 @@
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.29.0",
     "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@barba/css": "^2.1.15",
+    "gsap": "^3.6.1"
   }
 }

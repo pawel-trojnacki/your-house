@@ -12,8 +12,6 @@ $year = date('Y');
 ?>
 
 </main>
-
-
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="logo-wrapper">
@@ -26,6 +24,8 @@ $year = date('Y');
         </div>
     </div>
 </footer>
+
+</div><!-- barba container -->
 
 </div><!-- #page -->
 

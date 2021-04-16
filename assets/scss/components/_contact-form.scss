@@ -12,7 +12,6 @@
                 font-size: $font-s;
             }
             span {
-                // position: relative;
                 input, textarea {
                     margin-top: $spacing-s;
                     padding: 16px $spacing-s $spacing-s;
@@ -39,7 +38,6 @@
                 }
                 .wpcf7-not-valid-tip {
                     position: absolute;
-                    // top: 200%;
                     padding-top: $spacing-xxs;
                     font-weight: 600;
                     font-size: 0.8em;
@@ -96,18 +94,9 @@
                 height: 30px;
                 border: 2px solid $grey-400;
                 border-top: 2px solid $color-light;
-                animation: spin 0.8s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                animation: spin 0.8s infinite $transition;
             }
 
         }
     }
-}
-
-@keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-  }
 }

@@ -14,7 +14,7 @@ $post_date = get_the_date('F j, Y');
 <li class="post-item">
     <div class="image-wrapper">
         <a href="<?php echo $post_url ?>">
-            <?php the_post_thumbnail('medium_large', ['class' => 'post-item-image']) ?>
+            <?php the_post_thumbnail('medium_large', ['class' => 'post-item-image hover-zoom-out']) ?>
         </a>
     </div>
     <div class="post-info">
