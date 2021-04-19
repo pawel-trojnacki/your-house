@@ -22,23 +22,23 @@ $button_text = get_field('button_text');
 
 ?>
 
-<section class="block grid-section">
+<section class="grid-section">
     <div class="wrapper-content">
-        <div class="content-inner">
+        <div class="content-inner fade-in-reveal">
             <?php
             acf_text($title, 'h2', 'heading');
             acf_text($content, 'p', 'text');
             acf_link($button_url, $button_text, 'btn');
             ?>
         </div>
-        <div class="images">
+        <div class="images fade-in-reveal">
             <?php
             acf_image($secondary_image);
             acf_image($tertiary_image);
             ?>
         </div>
     </div>
-    <div class="wrapper-image">
+    <div class="wrapper-image fade-in-reveal">
         <?php acf_image($main_image) ?>
     </div>
 </section>

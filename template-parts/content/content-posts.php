@@ -11,7 +11,7 @@ $post_date = get_the_date('F j, Y');
 
 ?>
 
-<li class="post-item">
+<li class="post-item fade-in-reveal">
     <div class="image-wrapper">
         <a href="<?php echo $post_url ?>">
             <?php the_post_thumbnail('medium_large', ['class' => 'post-item-image hover-zoom-out']) ?>
@@ -20,6 +20,5 @@ $post_date = get_the_date('F j, Y');
     <div class="post-info">
         <p class="date"><?php echo $post_date ?></p>
         <?php the_title('<h2 class="heading-secondary post-item-title">', '</h2>') ?>
-        <!-- <a href="<?php echo $post_url ?>" class="link">Read more</a> -->
     </div>
 </li>

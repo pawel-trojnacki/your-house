@@ -20,20 +20,20 @@ $order_reverse = get_field('order_reverse');
 
 <section class="columns-section">
     <?php if (!$order_reverse) : ?>
-    <div class="column-content">
+    <div class="column-content fade-in-reveal">
         <?php
             acf_text($title, 'h2', 'subheading');
             acf_text($content, 'p', 'text');
             ?>
     </div>
-    <div class="column-image-wrapper">
+    <div class="column-image-wrapper fade-in-reveal">
         <?php acf_image($image, 'column-image') ?>
     </div>
     <?php else : ?>
-    <div class="column-image-wrapper">
+    <div class="column-image-wrapper fade-in-reveal">
         <?php acf_image($image, 'column-image') ?>
     </div>
-    <div class="column-content">
+    <div class="column-content fade-in-reveal">
         <?php
             acf_text($title, 'h2', 'subheading');
             acf_text($content, 'p', 'text');

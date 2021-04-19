@@ -69,6 +69,10 @@
             font-size: $font-s;
             letter-spacing: 1px;
             text-align: center;
+            transition: all 0.3s $transition;
+                &:hover, &:focus {
+                    background-color: $color-primary-dark;
+                }
         }
         .ajax-loader {
             width: 120px;
@@ -78,7 +82,7 @@
             position: absolute;
             right: 0;
             top: 0;
-            background-color: $color-primary;
+            background-color: $color-primary-dark;
             opacity: 1;
             border-radius: 0;
             &::before {

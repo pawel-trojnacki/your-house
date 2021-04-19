@@ -1,15 +1,14 @@
 const hamburger = document.querySelector('.hamburger');
 const navWrapper = document.querySelector('.nav-wrapper-mobile');
+const menuList = document.querySelectorAll('.menu-item');
 
-const menuList =
-    navWrapper?.children[0]?.children[0]?.children[0]?.children ?? null;
-const menuArray = menuList ? Array.from(menuList) : null;
+const menuArray = !!navWrapper && !!menuList ? Array.from(menuList) : null;
 
 function addTransitionDelay() {
-    const containerDelay = 0.5;
+    const initialDelay = 0.2;
     if (navWrapper.classList.contains('active')) {
         menuArray.forEach((item, id) => {
-            delay = containerDelay + id / 10;
+            delay = initialDelay + id / 10;
             item.style.transitionDelay = `${delay}s`;
         });
         return;

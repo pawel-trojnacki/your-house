@@ -14,6 +14,6 @@ $image = get_field('image');
 
 ?>
 
-<div class="full-width-image-wrapper">
+<div class="full-width-image-wrapper fade-in-reveal">
     <?php acf_image($image, 'full-width-image') ?>
 </div>

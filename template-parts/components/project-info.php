@@ -20,7 +20,7 @@ $post_id = get_the_ID();
 ?>
 
 <header class="project-header">
-    <div class="project-info">
+    <div class="project-info fade-in-reveal">
         <?php
         the_title('<h1 class="heading">', '</h1>');
         ?>
@@ -41,7 +41,7 @@ $post_id = get_the_ID();
         acf_text($project_description, 'p', 'text');
         ?>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper fade-in-reveal">
         <?php acf_image($project_image, 'project-info-image') ?>
     </div>
 </header>

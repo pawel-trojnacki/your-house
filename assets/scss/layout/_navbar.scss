@@ -42,7 +42,20 @@
                 }
               }   
         }
-        
+    }
+
+    .nav-indicator {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 75%;
+        width: 20px;
+        height: 2px;
+        background-color: $color-primary;
+        &.visible {
+            transition: all 0.5s $transition;
+        }
     }
 
     .hamburger {

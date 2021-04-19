@@ -32,7 +32,11 @@ class Assets
     public function register_scripts()
     {
         wp_register_script('main', YOUR_HOUSE_BUILD_JS_URI . '/main.js', [], time(), true);
+        // wp_register_script('single-post', YOUR_HOUSE_BUILD_JS_URI . '/singlePost.js', [], time(), true);
 
+        // if (is_singular('post')) {
+        //     wp_enqueue_script('single-post');
+        // }
         wp_enqueue_script('main');
     }
 }

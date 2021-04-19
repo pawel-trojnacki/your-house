@@ -16,10 +16,10 @@ $image2 = get_field('image_2');
 ?>
 
 <div class="grid-images">
-    <div class="image-wrapper">
+    <div class="image-wrapper fade-in-reveal">
         <?php acf_image($image1, 'grid-image') ?>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper fade-in-reveal">
         <?php acf_image($image2, 'grid-image') ?>
     </div>
 </div>

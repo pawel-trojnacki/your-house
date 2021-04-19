@@ -1,7 +1,30 @@
+.zoom-out {
+    opacity: 0;
+    transform: scale(1.25);
+    animation: zoom-out 1s $transition 0.6s forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 0.4s $transition 0.7s forwards;
+}
+
+.fade-in-delay {
+    opacity: 0;
+    animation: fade-in 0.4s $transition 1s forwards;
+}
+
 .hover-zoom-out {
     transition: transform 0.3s $transition;
     transform: scale(1.06);
     &:hover {
         transform: scale(1);
+    }
+}
+
+.fade-in-reveal {
+    transition: opacity 0.6s $transition;
+    &.hidden {
+        opacity: 0;
     }
 }

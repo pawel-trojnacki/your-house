@@ -20,7 +20,7 @@ $year = date('Y');
         <?php dynamic_sidebar('footer_area') ?>
         <div class="site-info">
             <p class="footer-text">&copy <?php echo $year ?> Your House</p>
-            <p class="footer-text">Created by: Paweł Trojnacki</p>
+            <p class="footer-text">Created by: P. Trojnacki</p>
         </div>
     </div>
 </footer>

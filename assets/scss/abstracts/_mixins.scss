@@ -62,6 +62,11 @@
     justify-content: center;
 }
 
+@mixin flex-end {
+    @include flex-row;
+    justify-content: flex-end;
+}
+
 @mixin flex-column {
     display: flex;
     flex-direction: column;

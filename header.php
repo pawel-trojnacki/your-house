@@ -35,19 +35,14 @@ if (is_page('contact')) {
                     </a>
                 </div>
                 <nav id="site-navigation" class="main-navigation">
-                    <?php wp_nav_menu([
-                        'theme_location' => 'primary-menu',
-                        'menu_id'        => 'primary-menu',
-                    ]) ?>
+                    <?php get_template_part('template-parts/components/nav-menu', 'desktop') ?>
                 </nav>
                 <?php get_template_part('template-parts/components/hamburger') ?>
+                <span class="nav-indicator"></span>
             </div>
             <div class="nav-wrapper-mobile">
                 <nav id="site-navigation-mobile" class="main-navigation-mobile">
-                    <?php wp_nav_menu([
-                        'theme_location' => 'primary-menu',
-                        'menu_id'        => 'primary-menu-mobile',
-                    ]) ?>
+                    <?php get_template_part('template-parts/components/nav-menu') ?>
                 </nav>
             </div>
 
