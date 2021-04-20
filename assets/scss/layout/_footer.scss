@@ -1,14 +1,8 @@
 .site-footer {
     position: relative;
     z-index: $z-content;
-    padding-top: $spacing-l;
+    padding-top: $spacing-xxxl;
     background-color: $color-light;
-    @include sm {
-        padding-top: $spacing-xxl;
-    }
-    @include lg {
-        padding-top: $spacing-xxxl;
-    }
     .footer-inner {
         @include flex-between;
         padding: $spacing-l $spacing-m;

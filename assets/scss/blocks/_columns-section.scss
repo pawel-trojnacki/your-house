@@ -5,7 +5,7 @@
     }
     .column-content {
         @include spacing-content;
-        margin: $spacing-l 0;
+        margin: $spacing-l 0 0;
         @include md {
             width: 50%;
             margin-top: 0;
@@ -16,7 +16,7 @@
     }
 
     .column-image-wrapper {
-        margin: $spacing-l 0;
+        margin: $spacing-l 0 0;
         @include md {
             margin: 0;
             width: 50%;
