@@ -31,7 +31,9 @@ export function navIndicator() {
         return;
     }
 
-    displayIndicator(indicator);
+    setTimeout(() => {
+        displayIndicator(indicator);
+    }, 500);
 }
 
 export function navIndicatorTransition() {

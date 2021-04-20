@@ -5,7 +5,7 @@ export function getActiveTab() {
         return;
     }
 
-    const pagenamePathId = 1;
+    const pagenamePathId = 2;
     const homepageTabId = 0;
 
     const pathname = window.location.pathname;

@@ -6,11 +6,6 @@
  * @package Your_House
  */
 
-$main_class = 'fade-in';
-if (is_page('contact')) {
-    $main_class = 'contact';
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +21,8 @@ if (is_page('contact')) {
 <body <?php body_class() ?>>
     <?php wp_body_open(); ?>
 
-    <div id="page" class="site" data-barba="wrapper">
+    <div id="page" class="site">
+
         <header id="masthead" class="site-header">
             <div class="nav-wrapper">
                 <div class="site-branding">
@@ -47,6 +43,6 @@ if (is_page('contact')) {
             </div>
 
         </header>
-        <div class="barba-container" data-barba="container" data-barba-namespace="cover">
-            <div class="cover"></div>
-            <main class="<?php echo $main_class ?>">
+
+        <div id="swup">
+            <main>

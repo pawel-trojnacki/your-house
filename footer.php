@@ -25,7 +25,7 @@ $year = date('Y');
     </div>
 </footer>
 
-</div><!-- barba container -->
+</div><!-- #swup -->
 
 </div><!-- #page -->
 
