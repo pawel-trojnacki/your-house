@@ -1,10 +1,6 @@
 .grid-images {
     @include flex-between;
     @include block-standard-spacing;
-    // @include translate-even-children;
-    // @include md {
-    //     padding: 0 5%;
-    // }
     .image-wrapper {
         width: $column-width;
     }

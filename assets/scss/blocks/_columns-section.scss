@@ -1,9 +1,11 @@
 .columns-section {
-    @include block-standard-spacing;
     @include flex-between;
+    @include md {
+        @include block-standard-spacing;
+    }
     .column-content {
         @include spacing-content;
-        margin-top: $spacing-l;
+        margin: $spacing-l 0;
         @include md {
             width: 50%;
             margin-top: 0;
@@ -14,7 +16,9 @@
     }
 
     .column-image-wrapper {
+        margin: $spacing-l 0;
         @include md {
+            margin: 0;
             width: 50%;
         }
         @include lg {
