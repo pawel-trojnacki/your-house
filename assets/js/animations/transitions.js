@@ -5,16 +5,19 @@ import {
     navIndicator,
     navIndicatorTransition,
 } from '../animations/nav-indicator';
+import reveal from './reveal';
 
 function init() {
     parallax();
     navIndicator();
+    reveal();
 }
 
 function onContentReplaced() {
+    window.scrollTo(0, 0);
     parallax();
     navIndicatorTransition();
-    window.scrollTo(0, 0);
+    reveal();
 }
 
 export default function transitions() {
